@@ -228,8 +228,9 @@
     </div>
 
 <script>
-    const API_BASE = "http://localhost:8080/api/transactions";
-    const API_USERS = "http://localhost:8080/api/users";
+   const URL_RAILWAY = "https://proyecto-billetera-backend-production.up.railway.app"; 
+    const API_BASE = `${URL_RAILWAY}/api/transactions`;
+    const API_USERS = `${URL_RAILWAY}/api/users`;
     let isLoginMode = true;
     let myChart = null;
 
