@@ -24,7 +24,8 @@ async function login() {
     const password = document.getElementById('loginPass').value;
 
     // Llamamos al endpoint que crearemos en Java
-    const response = await fetch('http://localhost:8080/api/users/login', {
+    // Cambiamos localhost por la URL de Railway
+    const response = await fetch('https://proyecto-billetera-backend-production.up.railway.app/api/users/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
